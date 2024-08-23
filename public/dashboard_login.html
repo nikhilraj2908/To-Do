@@ -1,0 +1,56 @@
+<div class="bg-light dashboard-container p-3">
+    <h2><span id="lblusername"></span> Dashboard <button class="bi bi-calendar-plus btn btn-success" data-bs-toggle="modal" data-bs-target="#modal-container"> Add Task</button> <button class="btn btn-danger" id="btnsignout">sign-out</button></h2>
+    <main>
+
+    </main>
+    <div class="modal fade " id="modal-container-edit" >
+        <div class="modal-dialog">
+            <div class="modal-content ">
+                <div class="modal-header">
+                    <h1>edit Appointment</h1>
+                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body overflow-auto" >
+                    <dl >
+                        <dt>appoint_id</dt>
+                        <dd><input type="text" class="w-75" id="edit_appointID"></dd>
+                        <dt>title</dt>
+                        <dd><input type="text" class="w-75" id="edit_title"></dd>
+                        <dt>date</dt>
+                        <dd><input type="date" class="w-75" id="edit_date"></dd>
+                        <dt>edit discription</dt>
+                        <dd ><textarea rows="3"  class="w-75" id="edit_discription"></textarea></dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" id="btnsaveappoint" data-bs-dismiss="modal">save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-container">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Add Appointment</h1>
+                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <dl >
+                        <dt>appoint_id</dt>
+                        <dd><input type="text" class="w-75" id="Add_appointID"></dd>
+                        <dt>title</dt>
+                        <dd><input type="text" class="w-75" id="Add_title"></dd>
+                        <dt>date</dt>
+                        <dd><input type="date" class="w-75" id="Add_date"></dd>
+                        <dt>Add discription</dt>
+                        <dd ><textarea rows="3"  class="w-75" id="Add_discription"></textarea></dd> 
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" id="btnaddappoint" data-bs-dismiss="modal">Add items</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
